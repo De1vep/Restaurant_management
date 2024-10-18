@@ -1,0 +1,55 @@
+﻿@page
+@model PR.Pages.MenuItems.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>MenuItem</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MenuItem.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MenuItem.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MenuItem.Img)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MenuItem.Img)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MenuItem.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MenuItem.Description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MenuItem.Price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MenuItem.Price)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MenuItem.Category)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MenuItem.Category.Id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MenuItem.Users)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MenuItem.Users.Id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.MenuItem?.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
