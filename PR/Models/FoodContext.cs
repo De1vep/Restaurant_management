@@ -21,6 +21,7 @@ namespace PR.Models
         public virtual DbSet<Order> Orders { get; set; } = null!;
         public virtual DbSet<OrderItem> OrderItems { get; set; } = null!;
         public virtual DbSet<Reservation> Reservations { get; set; } = null!;
+        public virtual DbSet<Role> Roles { get; set; } = null!;
         public virtual DbSet<Table> Tables { get; set; } = null!;
         public virtual DbSet<User> Users { get; set; } = null!;
 
@@ -75,12 +76,12 @@ namespace PR.Models
                 entity.HasOne(d => d.Category)
                     .WithMany(p => p.MenuItems)
                     .HasForeignKey(d => d.CategoryId)
-                    .HasConstraintName("FK__MenuItems__categ__4E88ABD4");
+                    .HasConstraintName("FK__MenuItems__categ__5165187F");
 
                 entity.HasOne(d => d.Users)
                     .WithMany(p => p.MenuItems)
                     .HasForeignKey(d => d.UsersId)
-                    .HasConstraintName("FK__MenuItems__users__4D94879B");
+                    .HasConstraintName("FK__MenuItems__users__5070F446");
             });
 
             modelBuilder.Entity<Order>(entity =>
@@ -106,12 +107,12 @@ namespace PR.Models
                 entity.HasOne(d => d.Table)
                     .WithMany(p => p.Orders)
                     .HasForeignKey(d => d.TableId)
-                    .HasConstraintName("FK__Orders__table_id__59063A47");
+                    .HasConstraintName("FK__Orders__table_id__5BE2A6F2");
 
                 entity.HasOne(d => d.Users)
                     .WithMany(p => p.Orders)
                     .HasForeignKey(d => d.UsersId)
-                    .HasConstraintName("FK__Orders__users_id__5812160E");
+                    .HasConstraintName("FK__Orders__users_id__5AEE82B9");
             });
 
             modelBuilder.Entity<OrderItem>(entity =>
@@ -131,12 +132,12 @@ namespace PR.Models
                 entity.HasOne(d => d.MenuItem)
                     .WithMany(p => p.OrderItems)
                     .HasForeignKey(d => d.MenuItemId)
-                    .HasConstraintName("FK__OrderItem__menu___5CD6CB2B");
+                    .HasConstraintName("FK__OrderItem__menu___5FB337D6");
 
                 entity.HasOne(d => d.Order)
                     .WithMany(p => p.OrderItems)
                     .HasForeignKey(d => d.OrderId)
-                    .HasConstraintName("FK__OrderItem__order__5BE2A6F2");
+                    .HasConstraintName("FK__OrderItem__order__5EBF139D");
             });
 
             modelBuilder.Entity<Reservation>(entity =>
@@ -158,12 +159,23 @@ namespace PR.Models
                 entity.HasOne(d => d.Table)
                     .WithMany(p => p.Reservations)
                     .HasForeignKey(d => d.TableId)
-                    .HasConstraintName("FK__Reservati__table__5535A963");
+                    .HasConstraintName("FK__Reservati__table__5812160E");
 
                 entity.HasOne(d => d.Users)
                     .WithMany(p => p.Reservations)
                     .HasForeignKey(d => d.UsersId)
-                    .HasConstraintName("FK__Reservati__users__5441852A");
+                    .HasConstraintName("FK__Reservati__users__571DF1D5");
+            });
+
+            modelBuilder.Entity<Role>(entity =>
+            {
+                entity.ToTable("Role");
+
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.Name)
+                    .HasMaxLength(100)
+                    .HasColumnName("name");
             });
 
             modelBuilder.Entity<Table>(entity =>
@@ -183,7 +195,7 @@ namespace PR.Models
                 entity.HasOne(d => d.Users)
                     .WithMany(p => p.Tables)
                     .HasForeignKey(d => d.UsersId)
-                    .HasConstraintName("FK__Tables__users_id__5165187F");
+                    .HasConstraintName("FK__Tables__users_id__5441852A");
             });
 
             modelBuilder.Entity<User>(entity =>
@@ -208,9 +220,12 @@ namespace PR.Models
                     .HasMaxLength(255)
                     .HasColumnName("password");
 
-                entity.Property(e => e.Role)
-                    .HasMaxLength(50)
-                    .HasColumnName("role");
+                entity.Property(e => e.RoleId).HasColumnName("role_id");
+
+                entity.HasOne(d => d.Role)
+                    .WithMany(p => p.Users)
+                    .HasForeignKey(d => d.RoleId)
+                    .HasConstraintName("FK__Users__role_id__4D94879B");
             });
 
             OnModelCreatingPartial(modelBuilder);

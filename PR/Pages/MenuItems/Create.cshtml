@@ -2,14 +2,69 @@
 @model PR.Pages.MenuItems.CreateModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Create MenuItems";
 }
 
 <h1>Create</h1>
 
 <h4>MenuItem</h4>
 <hr />
-<div class="row">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <form method="post" enctype="multipart/form-data" class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="form-group col-md-4">
+                                    <label asp-for="MenuItem.Name" class="control-label"></label><br />
+                                    <input asp-for="MenuItem.Name" class="form-control" />
+                                    <span asp-validation-for="MenuItem.Name" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label asp-for="MenuItem.Price" class="control-label"></label><br />
+                                    <input asp-for="MenuItem.Price" class="form-control" />
+                                    <span asp-validation-for="MenuItem.Price" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label asp-for="MenuItem.Description" class="control-label"></label><br />
+                                    <input asp-for="MenuItem.Description" class="form-control" />
+                                    <span asp-validation-for="MenuItem.Description" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label asp-for="MenuItem.Category" class="control-label"></label><br />
+                                    <select asp-for="SelectedCategoryName" class="form-control" asp-items="ViewBag.CategoryName"></select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label asp-for="MenuItem.Users" class="control-label"></label><br />
+                                    <select asp-for="SelectedUserName" class="form-control" asp-items="ViewBag.UserName"></select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <label asp-for="MenuItem.ProductImageFile" class="btn btn-outline-info mt-2"></label><br />
+                            <input hidden asp-for="MenuItem.ProductImageFile" class="form-control" type="file" accept="image/*" onchange="previewImage(event)" />
+                            <span asp-validation-for="MenuItem.ProductImageFile" class="text-danger"></span>
+                            <img id="imgPreview" class="img-thumbnail rounded" style="object-fit: cover; width:200px; height:200px;" />
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <a class="btn" asp-page="Index">Back to List</a>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+@* <div class="row">
     <div class="col-md-4">
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -42,7 +97,11 @@
                 <select asp-for="MenuItem.CategoryId" class ="form-control" asp-items="ViewBag.CategoryId"></select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <a class="btn" asp-page="Index">Back to List</a>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+                
             </div>
         </form>
     </div>
@@ -50,8 +109,21 @@
 
 <div>
     <a asp-page="Index">Back to List</a>
-</div>
+</div> *@
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        function previewImage(event) {
+            var reader = new FileReader();
+            reader.onload = function () {
+                var output = document.getElementById('imgPreview');
+                output.src = reader.result;
+                output.style.display = 'block';
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    </script>
 }

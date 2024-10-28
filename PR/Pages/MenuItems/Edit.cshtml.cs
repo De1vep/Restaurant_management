@@ -21,6 +21,8 @@ namespace PR.Pages.MenuItems
 
         [BindProperty]
         public MenuItem MenuItem { get; set; } = default!;
+        [BindProperty]
+        public IFormFile? NewImage { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -29,14 +31,29 @@ namespace PR.Pages.MenuItems
                 return NotFound();
             }
 
-            var menuitem =  await _context.MenuItems.FirstOrDefaultAsync(m => m.Id == id);
+            var menuitem =  await _context.MenuItems.Include(p => p.Category).Include(p => p.Users).FirstOrDefaultAsync(m => m.Id == id);
             if (menuitem == null)
             {
                 return NotFound();
             }
             MenuItem = menuitem;
-           ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Id");
-           ViewData["UsersId"] = new SelectList(_context.Users, "Id", "Id");
+
+
+            var categoryNames = await _context.Categories
+                            .Select(c => c.Name)
+                            .Distinct()
+                            .ToListAsync();
+            ViewData["CategoryName"] = new SelectList(categoryNames);
+
+
+
+            var userNames = await _context.Users
+                .Select(c => c.Name)
+                .Distinct()
+                .ToListAsync();
+            ViewData["UserName"] = new SelectList(userNames);
+
+
             return Page();
         }
 
@@ -49,7 +66,36 @@ namespace PR.Pages.MenuItems
                 return Page();
             }
 
-            _context.Attach(MenuItem).State = EntityState.Modified;
+
+            var itemToUpdate = await _context.MenuItems
+                                    .Include(p => p.Category)
+                                    .Include (p => p.Users)
+                                    .FirstOrDefaultAsync(p => p.Id == MenuItem.Id);
+
+            if (itemToUpdate == null)
+            {
+                return NotFound();
+            }
+
+            if (NewImage != null && NewImage.Length > 0)
+            {
+                var filePath = Path.Combine("wwwroot/img/MenuItem", Path.GetFileName(NewImage.FileName));
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await NewImage.CopyToAsync(stream);
+                }
+
+                itemToUpdate.Img = Path.GetFileName(NewImage.FileName);
+            }
+
+            itemToUpdate.Name = MenuItem.Name;
+            itemToUpdate.Description = MenuItem.Description;
+            itemToUpdate.Price = MenuItem.Price;
+            itemToUpdate.Users.Name = MenuItem.Users.Name;
+            itemToUpdate.Category.Name = MenuItem.Category.Name;
+
+            _context.Attach(itemToUpdate).State = EntityState.Modified;
 
             try
             {

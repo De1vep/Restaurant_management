@@ -2,14 +2,32 @@
 @model PR.Pages.MenuItems.IndexModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "List of MenuItems";
 }
 
-<h1>Index</h1>
+<h1>MenuItems</h1>
 
 <p>
     <a asp-page="Create">Create New</a>
 </p>
+<form method="get">
+    <div class="row">
+        <div class="col-md-4">
+            <label for="ItemName">ItemName:</label>
+            <input class="form-control" type="text" id="ItemName" name="ItemName" value="@Model.ItemName" />
+        </div>
+        <div class="col-md-4">
+            <label for="MinUnitPrice">Min Unit Price:</label>
+            <input class="form-control" type="number" min="0" id="MinUnitPrice" name="MinUnitPrice" value="@Model.MinUnitPrice" />
+        </div>
+        <div class="col-md-4">
+            <label for="MaxUnitPrice">Max Unit Price:</label>
+            <input class="form-control" type="number" min="0" id="MaxUnitPrice" name="MaxUnitPrice" value="@Model.MaxUnitPrice" />
+        </div>
+    </div>
+    <hr />
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
 <table class="table">
     <thead>
         <tr>
@@ -41,7 +59,9 @@
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Img)
+
+                    <img src="~/img/MenuItem/@Html.DisplayFor(modelItem => item.Img)" style="object-fit: cover;" class="img-thumbnail avatar-100 rounded" />
+@*                 @Html.DisplayFor(modelItem => item.Img) *@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Description)
@@ -50,10 +70,10 @@
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Category.Id)
+                @Html.DisplayFor(modelItem => item.Category.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Users.Id)
+                @Html.DisplayFor(modelItem => item.Users.Name)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
