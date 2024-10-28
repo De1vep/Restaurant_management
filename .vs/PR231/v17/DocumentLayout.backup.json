@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "E:\\ProjectPRN231\\Newver\\PR231\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{090439A0-2029-4129-8E3B-DB3A5F61C4D2}|PR\\PR.csproj|e:\\projectprn231\\newver\\pr231\\pr\\models\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{090439A0-2029-4129-8E3B-DB3A5F61C4D2}|PR\\PR.csproj|solutionrelative:pr\\models\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{090439A0-2029-4129-8E3B-DB3A5F61C4D2}|PR\\PR.csproj|e:\\projectprn231\\newver\\pr231\\pr\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{090439A0-2029-4129-8E3B-DB3A5F61C4D2}|PR\\PR.csproj|solutionrelative:pr\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{090439A0-2029-4129-8E3B-DB3A5F61C4D2}|PR\\PR.csproj|e:\\projectprn231\\newver\\pr231\\pr\\models\\foodcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{090439A0-2029-4129-8E3B-DB3A5F61C4D2}|PR\\PR.csproj|solutionrelative:pr\\models\\foodcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{090439A0-2029-4129-8E3B-DB3A5F61C4D2}|PR\\PR.csproj|e:\\projectprn231\\newver\\pr231\\pr\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{090439A0-2029-4129-8E3B-DB3A5F61C4D2}|PR\\PR.csproj|solutionrelative:pr\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{090439A0-2029-4129-8E3B-DB3A5F61C4D2}|PR\\PR.csproj|e:\\projectprn231\\newver\\pr231\\pr\\pages\\menuitems\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{090439A0-2029-4129-8E3B-DB3A5F61C4D2}|PR\\PR.csproj|solutionrelative:pr\\pages\\menuitems\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{090439A0-2029-4129-8E3B-DB3A5F61C4D2}|PR\\PR.csproj|e:\\projectprn231\\newver\\pr231\\pr\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{090439A0-2029-4129-8E3B-DB3A5F61C4D2}|PR\\PR.csproj|solutionrelative:pr\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 175,
+          "SelectedChildIndex": 174,
           "Children": [
             {
               "$type": "Bookmark",
@@ -722,54 +714,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CartItem.cs",
-              "DocumentMoniker": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\Models\\CartItem.cs",
-              "RelativeDocumentMoniker": "PR\\Models\\CartItem.cs",
-              "ToolTip": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\Models\\CartItem.cs",
-              "RelativeToolTip": "PR\\Models\\CartItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T15:35:15.411Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FoodContext.cs",
-              "DocumentMoniker": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\Models\\FoodContext.cs",
-              "RelativeDocumentMoniker": "PR\\Models\\FoodContext.cs",
-              "ToolTip": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\Models\\FoodContext.cs",
-              "RelativeToolTip": "PR\\Models\\FoodContext.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAowBwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T15:34:42.912Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "PR\\Pages\\Index.cshtml",
+              "ToolTip": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\Pages\\Index.cshtml",
+              "RelativeToolTip": "PR\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-28T16:07:58.346Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MenuItem.cs",
-              "DocumentMoniker": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\Models\\MenuItem.cs",
-              "RelativeDocumentMoniker": "PR\\Models\\MenuItem.cs",
-              "ToolTip": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\Models\\MenuItem.cs",
-              "RelativeToolTip": "PR\\Models\\MenuItem.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAxwBkAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T15:32:55.764Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\Pages\\MenuItems\\Create.cshtml",
-              "RelativeDocumentMoniker": "PR\\Pages\\MenuItems\\Create.cshtml",
-              "ToolTip": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\Pages\\MenuItems\\Create.cshtml",
-              "RelativeToolTip": "PR\\Pages\\MenuItems\\Create.cshtml",
-              "ViewState": "AgIAABEAAAAAAAAAAAAUwC4AAAA1AAAAAAAAAA==",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PR\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PR\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADYBAAAAAAAAAAAwwJoBAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-28T15:32:44.084Z",
+              "WhenOpened": "2024-10-28T16:07:56.486Z",
               "EditorCaption": ""
             }
           ]
