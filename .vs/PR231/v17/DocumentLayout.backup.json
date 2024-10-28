@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\ProjectPRN231\\Newver\\PR231\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{090439A0-2029-4129-8E3B-DB3A5F61C4D2}|PR\\PR.csproj|e:\\projectprn231\\newver\\pr231\\pr\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{090439A0-2029-4129-8E3B-DB3A5F61C4D2}|PR\\PR.csproj|solutionrelative:pr\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{090439A0-2029-4129-8E3B-DB3A5F61C4D2}|PR\\PR.csproj|e:\\projectprn231\\newver\\pr231\\pr\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{090439A0-2029-4129-8E3B-DB3A5F61C4D2}|PR\\PR.csproj|solutionrelative:pr\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{090439A0-2029-4129-8E3B-DB3A5F61C4D2}|PR\\PR.csproj|e:\\projectprn231\\newver\\pr231\\pr\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{090439A0-2029-4129-8E3B-DB3A5F61C4D2}|PR\\PR.csproj|solutionrelative:pr\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 174,
+          "SelectedChildIndex": 173,
           "Children": [
             {
               "$type": "Bookmark",
@@ -714,26 +714,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "PR\\Pages\\Index.cshtml",
               "ToolTip": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\Pages\\Index.cshtml",
               "RelativeToolTip": "PR\\Pages\\Index.cshtml",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAMwBAAAAAAAAAAAwwNMBAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-28T16:07:58.346Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "PR\\Pages\\Shared\\_Layout.cshtml",
               "ToolTip": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\Pages\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "PR\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAADYBAAAAAAAAAAAwwJoBAAANAAAAAAAAAA==",
+              "ViewState": "AgIAACIBAAAAAAAAAAAwwDIBAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-28T16:07:56.486Z",
               "EditorCaption": ""
