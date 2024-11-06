@@ -28,7 +28,10 @@ namespace PR.Pages.MenuItems
                 return NotFound();
             }
 
-            var menuitem = await _context.MenuItems.FirstOrDefaultAsync(m => m.Id == id);
+            var menuitem = await _context.MenuItems
+                .Include(p => p.Category)
+                .Include(p => p.Users)
+                .FirstOrDefaultAsync(m => m.Id == id);
 
             if (menuitem == null)
             {

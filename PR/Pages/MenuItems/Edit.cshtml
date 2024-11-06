@@ -5,56 +5,94 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1>Edit Item</h1>
 
-<h4>MenuItem</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="MenuItem.Id" />
-            <div class="form-group">
-                <label asp-for="MenuItem.Name" class="control-label"></label>
-                <input asp-for="MenuItem.Name" class="form-control" />
-                <span asp-validation-for="MenuItem.Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MenuItem.Img" class="control-label"></label>
-                <input asp-for="MenuItem.Img" class="form-control" />
-                <span asp-validation-for="MenuItem.Img" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MenuItem.Description" class="control-label"></label>
-                <input asp-for="MenuItem.Description" class="form-control" />
-                <span asp-validation-for="MenuItem.Description" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MenuItem.Price" class="control-label"></label>
-                <input asp-for="MenuItem.Price" class="form-control" />
-                <span asp-validation-for="MenuItem.Price" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MenuItem.UsersId" class="control-label"></label>
-                <select asp-for="MenuItem.UsersId" class="form-control" asp-items="ViewBag.UsersId"></select>
-                <span asp-validation-for="MenuItem.UsersId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MenuItem.CategoryId" class="control-label"></label>
-                <select asp-for="MenuItem.CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
-                <span asp-validation-for="MenuItem.CategoryId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <form method="post" enctype="multipart/form-data" class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <input type="hidden" asp-for="MenuItem.Id" />
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label asp-for="MenuItem.Name" class="control-label"></label><br />
+                                    <input asp-for="MenuItem.Name" class="form-control" />
+                                    <span asp-validation-for="MenuItem.Name" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label asp-for="MenuItem.Price" class="control-label"></label><br />
+                                    <input asp-for="MenuItem.Price" class="form-control" />
+                                    <span asp-validation-for="MenuItem.Price" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label asp-for="MenuItem.Description" class="control-label"></label><br />
+                                    <input asp-for="MenuItem.Description" class="form-control" />
+                                    <span asp-validation-for="MenuItem.Description" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label asp-for="MenuItem.Category" class="control-label"></label><br />
+                                    <select asp-for="MenuItem.Category.Name" class="form-control" asp-items="ViewBag.CategoryName"></select>
+                                    <span asp-validation-for="MenuItem.Category.Name" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label asp-for="MenuItem.Users" class="control-label"></label><br />
+                                    <select asp-for="MenuItem.Users.Name" class="form-control" asp-items="ViewBag.UserName"></select>
+                                    <span asp-validation-for="MenuItem.Users.Name" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">Image</label><br />
+                                <img id="currentImage" src="~/img/MenuItem/@Model.MenuItem.Img" class="img-thumbnail rounded" style="object-fit: cover; width:200px; height:200px;" />
+                            </div>
+
+                            <!-- Cho phép tải lên hình ảnh mới -->
+                            <div class="form-group">
+                                <label for="imageUpload" class="control-label btn btn-outline-info mt-2">New Image</label><br />
+                                <input id="imageUpload" name="NewImage" class="form-control" type="file" accept="image/*" style="display:none;" />
+                                <span asp-validation-for="NewImage" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <a asp-page="./Index">Back to List</a>
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-page="./Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        var currentImageURL = document.getElementById('currentImage').src;
+
+        document.getElementById('imageUpload').addEventListener('change', function (event) {
+            var input = event.target;
+
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function () {
+                    var dataURL = reader.result;
+                    var output = document.getElementById('currentImage');
+                    output.src = dataURL;
+                };
+                reader.readAsDataURL(input.files[0]);
+            } else {
+                var output = document.getElementById('currentImage');
+                output.src = currentImageURL;
+            }
+        });
+    </script>
 }

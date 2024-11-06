@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PR.Models
 {
@@ -20,6 +21,8 @@ namespace PR.Models
 
         public virtual Category? Category { get; set; }
         public virtual User? Users { get; set; }
+        [NotMapped]
+        public IFormFile? ProductImageFile { get; set; }
         public virtual ICollection<OrderItem> OrderItems { get; set; }
     }
 }

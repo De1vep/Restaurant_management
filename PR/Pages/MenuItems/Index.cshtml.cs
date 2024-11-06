@@ -17,6 +17,15 @@ namespace PR.Pages.MenuItems
         {
             _context = context;
         }
+        [BindProperty(SupportsGet = true)]
+        public string? ItemName { get; set; }
+
+
+        [BindProperty(SupportsGet = true)]
+        public int? MinUnitPrice { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public int? MaxUnitPrice { get; set; }
 
         public IList<MenuItem> MenuItem { get;set; } = default!;
 
@@ -26,8 +35,31 @@ namespace PR.Pages.MenuItems
             {
                 MenuItem = await _context.MenuItems
                 .Include(m => m.Category)
-                .Include(m => m.Users).ToListAsync();
+                .Include(m => m.Users)
+                .OrderByDescending(m => m.Id)
+                .ToListAsync();
             }
+            var productsQuery = _context.MenuItems
+                .Include(m => m.Category)
+                .Include(m => m.Users)
+                .OrderByDescending(m => m.Id)
+                .AsQueryable();
+            if (!string.IsNullOrEmpty(ItemName))
+            {
+                productsQuery = productsQuery.Where(p => p.Name.Contains(ItemName));
+            }
+
+            if (MinUnitPrice.HasValue)
+            {
+                productsQuery = productsQuery.Where(p => p.Price >= MinUnitPrice.Value);
+            }
+
+            if (MaxUnitPrice.HasValue)
+            {
+                productsQuery = productsQuery.Where(p => p.Price <= MaxUnitPrice.Value);
+            }
+
+            MenuItem = await productsQuery.ToListAsync();
         }
     }
 }

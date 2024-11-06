@@ -5,12 +5,308 @@
       "PackagePath": "staticwebassets\\PR.bundle.scp.css"
     },
     {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\about.html",
+      "PackagePath": "staticwebassets\\asset\\about.html"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\book.html",
+      "PackagePath": "staticwebassets\\asset\\book.html"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\asset\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\asset\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\asset\\css\\responsive.css"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\css\\style.css",
+      "PackagePath": "staticwebassets\\asset\\css\\style.css"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\css\\style.css.map",
+      "PackagePath": "staticwebassets\\asset\\css\\style.css.map"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\css\\style.scss",
+      "PackagePath": "staticwebassets\\asset\\css\\style.scss"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\asset\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\asset\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\asset\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\images\\about-img.png",
+      "PackagePath": "staticwebassets\\asset\\images\\about-img.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\images\\client1.jpg",
+      "PackagePath": "staticwebassets\\asset\\images\\client1.jpg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\images\\client2.jpg",
+      "PackagePath": "staticwebassets\\asset\\images\\client2.jpg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\images\\f1.png",
+      "PackagePath": "staticwebassets\\asset\\images\\f1.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\images\\f2.png",
+      "PackagePath": "staticwebassets\\asset\\images\\f2.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\images\\f3.png",
+      "PackagePath": "staticwebassets\\asset\\images\\f3.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\images\\f4.png",
+      "PackagePath": "staticwebassets\\asset\\images\\f4.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\images\\f5.png",
+      "PackagePath": "staticwebassets\\asset\\images\\f5.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\images\\f6.png",
+      "PackagePath": "staticwebassets\\asset\\images\\f6.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\images\\f7.png",
+      "PackagePath": "staticwebassets\\asset\\images\\f7.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\images\\f8.png",
+      "PackagePath": "staticwebassets\\asset\\images\\f8.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\images\\f9.png",
+      "PackagePath": "staticwebassets\\asset\\images\\f9.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\asset\\images\\favicon.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\images\\hero-bg.jpg",
+      "PackagePath": "staticwebassets\\asset\\images\\hero-bg.jpg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\images\\o1.jpg",
+      "PackagePath": "staticwebassets\\asset\\images\\o1.jpg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\images\\o2.jpg",
+      "PackagePath": "staticwebassets\\asset\\images\\o2.jpg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\index.html",
+      "PackagePath": "staticwebassets\\asset\\index.html"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\asset\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\js\\custom.js",
+      "PackagePath": "staticwebassets\\asset\\js\\custom.js"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\js\\jquery-3.4.1.min.js",
+      "PackagePath": "staticwebassets\\asset\\js\\jquery-3.4.1.min.js"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\asset\\menu.html",
+      "PackagePath": "staticwebassets\\asset\\menu.html"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Slides Framework\\Images\\Few Slides.jpg",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Slides Framework\\Images\\Few Slides.jpg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Slides Framework\\Images\\Generator.png",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Slides Framework\\Images\\Generator.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Slides Framework\\Images\\Many Slide (Really).jpg",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Slides Framework\\Images\\Many Slide (Really).jpg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Slides Framework\\Images\\Many Slides.jpg",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Slides Framework\\Images\\Many Slides.jpg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Slides Framework\\Images\\Presentation.jpg",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Slides Framework\\Images\\Presentation.jpg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Slides Framework\\Images\\Responsive.png",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Slides Framework\\Images\\Responsive.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Slides Framework\\Images\\Slide 2.jpg",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Slides Framework\\Images\\Slide 2.jpg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Slides Framework\\Images\\Slide 3.jpg",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Slides Framework\\Images\\Slide 3.jpg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Slides Framework\\Images\\Slide 4.jpg",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Slides Framework\\Images\\Slide 4.jpg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Slides Framework\\Images\\Slide.png",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Slides Framework\\Images\\Slide.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Slides Framework\\Images\\Your Content.jpg",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Slides Framework\\Images\\Your Content.jpg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Slides Framework\\Logo\\logo-white.png",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Slides Framework\\Logo\\logo-white.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Slides Framework\\Logo\\logo.png",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Slides Framework\\Logo\\logo.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Slides Framework\\Logo\\logo.svg",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Slides Framework\\Logo\\logo.svg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Slides Framework\\Read me.pdf",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Slides Framework\\Read me.pdf"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Startup Framework\\img\\favicon.ico",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Startup Framework\\img\\favicon.ico"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Startup Framework\\img\\img_01.png",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Startup Framework\\img\\img_01.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Startup Framework\\img\\img_02.png",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Startup Framework\\img\\img_02.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Startup Framework\\img\\logo.png",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Startup Framework\\img\\logo.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Startup Framework\\img\\player.png",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Startup Framework\\img\\player.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Startup Framework\\index.html",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Startup Framework\\index.html"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Startup Framework\\logo.zip",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Startup Framework\\logo.zip"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\Startup Framework\\press_images.zip",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\Startup Framework\\press_images.zip"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\delete-icn.svg",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\delete-icn.svg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\index.html",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\index.html"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\item-1.png",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\item-1.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\item-2.png",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\item-2.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\item-3.png",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\item-3.png"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\minus.svg",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\minus.svg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\plus.svg",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\plus.svg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\style.css",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\style.css"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\cart\\shopping-cart\\twitter-heart.png",
+      "PackagePath": "staticwebassets\\cart\\shopping-cart\\twitter-heart.png"
+    },
+    {
       "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\img\\MenuItem\\e.jpg",
+      "PackagePath": "staticwebassets\\img\\MenuItem\\e.jpg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\img\\MenuItem\\i.jpg",
+      "PackagePath": "staticwebassets\\img\\MenuItem\\i.jpg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\img\\MenuItem\\o.jpg",
+      "PackagePath": "staticwebassets\\img\\MenuItem\\o.jpg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\img\\MenuItem\\p.jpg",
+      "PackagePath": "staticwebassets\\img\\MenuItem\\p.jpg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\img\\MenuItem\\q.jpg",
+      "PackagePath": "staticwebassets\\img\\MenuItem\\q.jpg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\img\\MenuItem\\r.jpg",
+      "PackagePath": "staticwebassets\\img\\MenuItem\\r.jpg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\img\\MenuItem\\t.jpg",
+      "PackagePath": "staticwebassets\\img\\MenuItem\\t.jpg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\img\\MenuItem\\u.jpg",
+      "PackagePath": "staticwebassets\\img\\MenuItem\\u.jpg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\img\\MenuItem\\w.jpg",
+      "PackagePath": "staticwebassets\\img\\MenuItem\\w.jpg"
+    },
+    {
+      "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\img\\MenuItem\\y.jpg",
+      "PackagePath": "staticwebassets\\img\\MenuItem\\y.jpg"
     },
     {
       "Id": "E:\\ProjectPRN231\\Newver\\PR231\\PR\\wwwroot\\js\\site.js",

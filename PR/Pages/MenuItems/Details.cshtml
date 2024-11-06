@@ -2,54 +2,82 @@
 @model PR.Pages.MenuItems.DetailsModel
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Details Item";
 }
 
-<h1>Details</h1>
+<h1>Details Item</h1>
 
-<div>
-    <h4>MenuItem</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.MenuItem.Name)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.MenuItem.Name)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.MenuItem.Img)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.MenuItem.Img)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.MenuItem.Description)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.MenuItem.Description)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.MenuItem.Price)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.MenuItem.Price)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.MenuItem.Category)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.MenuItem.Category.Id)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.MenuItem.Users)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.MenuItem.Users.Id)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-page="./Edit" asp-route-id="@Model.MenuItem?.Id">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
+<div class="card">
+    <div class="container">
+        <div class="row card-body">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="control-label">
+                        <strong>@Html.DisplayNameFor(model => model.MenuItem.Id)</strong>
+                    </label>
+                    <div class="form-control">
+                        @Html.DisplayFor(model => model.MenuItem.Id)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">
+                        <strong>@Html.DisplayNameFor(model => model.MenuItem.Name)</strong>
+                    </label>
+                    <div class="form-control">
+                        @Html.DisplayFor(model => model.MenuItem.Name)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">
+                        <strong>@Html.DisplayNameFor(model => model.MenuItem.Description)</strong>
+                    </label>
+                    <div class="form-control">
+                        @Html.DisplayFor(model => model.MenuItem.Description)
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label class="control-label">
+                            <strong>@Html.DisplayNameFor(model => model.MenuItem.Price)</strong>
+                        </label>
+                        <div class="form-control">
+                            @Html.DisplayFor(model => model.MenuItem.Price)
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">
+                        <strong>@Html.DisplayNameFor(model => model.MenuItem.Users)</strong>
+                    </label>
+                    <div class="form-control">
+                        @Html.DisplayFor(model => model.MenuItem.Users.Name)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">
+                        <strong>@Html.DisplayNameFor(model => model.MenuItem.Category)</strong>
+                    </label>
+                    <div class="form-control">
+                        @Html.DisplayFor(model => model.MenuItem.Category.Name)
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="control-label">
+                        <strong>@Html.DisplayNameFor(model => model.MenuItem.Img)</strong>
+                    </label>
+                    <div>
+                        <img src="~/img/MenuItem/@Html.DisplayFor(model => model.MenuItem.Img)" style="width: 400px; height:auto;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+        <a asp-page="./Index">Back to List</a>
+        <a class="btn btn-primary" asp-page="./Edit" asp-route-id="@Model.MenuItem?.Id">Edit</a>
+    </div>
 </div>
