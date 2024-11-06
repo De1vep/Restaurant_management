@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using PR.Constants;
 using PR.Models;
 using PR.Requests;
 
-namespace PR.Pages
+namespace PR.Pages.BookTable
 {
     public class IndexModel : PageModel
     {
@@ -18,28 +18,14 @@ namespace PR.Pages
             _logger = logger;
         }
 
-        public IList<MenuItem> MenuItem { get; set; } = default!;
-        public IList<Category> Category { get; set; } = default!;
+
         public IList<Table> Tables { get; set; } = default!;
 
         [BindProperty]
         public BookTableRequest? BookTableRequest { get; set; }
 
-        public async Task OnGetAsync()
+        public async Task<IActionResult> OnGet()
         {
-            if (_context.MenuItems != null)
-            {
-                MenuItem = await _context.MenuItems
-                    .Include(p => p.Category)
-                    .ToListAsync();
-            }
-
-            if (_context.Categories != null)
-            {
-                Category = await _context.Categories.ToListAsync();
-            }
-
-
             if (_context.Tables != null)
             {
                 Tables = await _context.Tables
@@ -47,11 +33,22 @@ namespace PR.Pages
                     .ToListAsync();
             }
 
+            return Page();
         }
 
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid) return RedirectToPage("/Index");
+            if (_context.Tables != null)
+            {
+                Tables = await _context.Tables
+                    .Where(x => x.Status!.Trim().ToLower() == TableStatus.AVAILABLE)
+                    .ToListAsync();
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
 
             var existUser = await _context.Users
                     .Where(x => x.Email!.ToLower() == BookTableRequest!.Email.ToLower())
@@ -89,11 +86,12 @@ namespace PR.Pages
                 Status = ReservationStatus.PENDING,
             };
 
-            var existTable = await _context.Tables.FirstOrDefaultAsync(x => x.Id == BookTableRequest!.TableId);
+            var existTable = await _context.Tables!.FirstOrDefaultAsync(x => x.Id == BookTableRequest!.TableId);
             if (existTable is not null)
             {
                 existTable.Status = TableStatus.RESERVED;
-            } else
+            }
+            else
             {
                 return Page();
             }
@@ -105,26 +103,5 @@ namespace PR.Pages
 
         }
 
-        public async Task<JsonResult> OnGetMenuItemsAsync(string? categoryName)
-        {
-            var menuItems = string.IsNullOrEmpty(categoryName)
-                ? await _context.MenuItems.Include(m => m.Category).ToListAsync()
-                : await _context.MenuItems
-                    .Include(m => m.Category)
-                    .Where(m => m.Category.Name.ToLower() == categoryName.ToLower())
-                    .ToListAsync();
-
-            return new JsonResult(menuItems.Select(m => new
-            {
-                m.Id,
-                m.Name,
-                Img = Url.Content($"~/img/MenuItem/{m.Img}"),
-                m.Description,
-                m.Price,
-                CategoryName = m.Category.Name
-            }));
-        }
-
     }
 }
-

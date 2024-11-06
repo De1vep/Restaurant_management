@@ -1,0 +1,70 @@
+﻿@page
+@model PR.Pages.BookTable.IndexModel
+@{
+}
+
+<section class="book_section layout_padding">
+    <div class="container">
+        <div class="heading_container">
+            <h2>
+                Book A Table
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form_container">
+                    <form method="post">
+                        <div>
+                            <span asp-validation-for="BookTableRequest!.Name" class="text-danger"></span>
+                            <input type="text" class="form-control" asp-for="BookTableRequest!.Name" placeholder="Your Name" />
+                        </div>
+                        <div>
+                            <span asp-validation-for="BookTableRequest!.Phone" class="text-danger"></span>
+                            <input type="text" class="form-control" asp-for="BookTableRequest!.Phone" placeholder="Phone Number" />
+                        </div>
+                        <div>
+                            <span asp-validation-for="BookTableRequest!.Email" class="text-danger"></span>
+                            <input type="email" class="form-control" asp-for="BookTableRequest!.Email" placeholder="Your Email" />
+                        </div>
+                        <div>
+                            <span asp-validation-for="BookTableRequest!.TableId" class="text-danger"></span>
+                            <select asp-for="BookTableRequest!.TableId" class="form-control nice-select wide">
+                                @if (Model.Tables.Any())
+                                {
+                                    <option disabled selected>
+                                        Select a table
+                                    </option>
+                                    @foreach (var item in Model.Tables)
+                                    {
+                                        <option value=@item.Id>
+                                            @item.TableNumber
+                                        </option>
+                                    }
+                                }
+                                else
+                                {
+                                    <option>There are no available tables.</option>
+                                }
+                            </select>
+
+                        </div>
+                        <div>
+                            <span asp-validation-for="BookTableRequest!.BookDate" class="text-danger"></span>
+                            <input type="datetime-local" class="form-control" asp-for="BookTableRequest!.BookDate">
+                        </div>
+                        <div class="btn_box">
+                            <button>
+                                Book Now
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="map_container ">
+                    <div id="googleMap"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -9,183 +9,191 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PR
 build_property.RootNamespace = PR
-build_property.ProjectDir = E:\ProjectPRN231\Newver\PR231\PR\
+build_property.ProjectDir = C:\Users\Admin\OneDrive\Desktop\Restaurant_management\PR\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\ProjectPRN231\Newver\PR231\PR
+build_property.MSBuildProjectDirectory = C:\Users\Admin\OneDrive\Desktop\Restaurant_management\PR
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Carts/Index.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/BookTable/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va1RhYmxlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Carts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Categories/Create.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Categories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Categories/Delete.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Categories/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Categories/Details.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Categories/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Categories/Edit.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Categories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Categories/Index.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Error.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Index.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/MenuItems/Create.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/MenuItems/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudUl0ZW1zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/MenuItems/Delete.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/MenuItems/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudUl0ZW1zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/MenuItems/Details.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/MenuItems/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudUl0ZW1zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/MenuItems/Edit.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/MenuItems/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudUl0ZW1zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/MenuItems/Index.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/MenuItems/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudUl0ZW1zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/OrderItems/Create.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/OrderItems/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJJdGVtc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/OrderItems/Delete.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/OrderItems/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJJdGVtc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/OrderItems/Details.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/OrderItems/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJJdGVtc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/OrderItems/Edit.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/OrderItems/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJJdGVtc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/OrderItems/Index.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/OrderItems/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJJdGVtc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Orders/Create.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Orders/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Orders/Delete.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Orders/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Orders/Details.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Orders/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Orders/Edit.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Orders/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Orders/Index.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Orders/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Privacy.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Reservations/Create.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Reservations/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YXRpb25zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Reservations/Delete.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Reservations/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YXRpb25zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Reservations/Details.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Reservations/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YXRpb25zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Reservations/Edit.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Reservations/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YXRpb25zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Reservations/Index.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Reservations/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YXRpb25zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Reservations/Successfully.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YXRpb25zXFN1Y2Nlc3NmdWxseS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Tables/Create.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Tables/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFibGVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Tables/Delete.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Tables/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFibGVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Tables/Details.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Tables/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFibGVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Tables/Edit.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Tables/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFibGVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Tables/Index.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Tables/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFibGVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Users/Create.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Users/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Users/Delete.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Users/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Users/Details.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Users/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Users/Edit.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Users/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Users/Index.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/_ViewImports.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/_ViewStart.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ProjectPRN231/Newver/PR231/PR/Pages/Shared/_Layout.cshtml]
+[C:/Users/Admin/OneDrive/Desktop/Restaurant_management/PR/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-2egc7k89yu

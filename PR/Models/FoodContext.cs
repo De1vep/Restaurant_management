@@ -210,6 +210,10 @@ namespace PR.Models
                     .HasMaxLength(100)
                     .HasColumnName("email");
 
+                entity.Property(e => e.Phone)
+                .HasMaxLength(10)
+                .HasColumnName("phone");
+
                 entity.Property(e => e.Img).HasColumnName("img");
 
                 entity.Property(e => e.Name)

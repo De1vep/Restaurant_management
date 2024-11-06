@@ -28,7 +28,9 @@
     <link href="~/asset/css/style.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="~/asset/css/responsive.css" rel="stylesheet" />
-
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/lib/bootstrap-select/js/bootstrap-select.min.js"></script>
 </head>
 <body>
     <div class="hero_area">
@@ -39,7 +41,7 @@
         <header class="header_section">
             <div class="container">
                 <nav class="navbar navbar-expand-lg custom_nav-container ">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" asp-page="/Index">
                         <span>
                             Feane
                         </span>
@@ -52,7 +54,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav  mx-auto ">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" asp-page="/Index">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="MenuItems">Menu</a>
@@ -61,7 +63,7 @@
                                 <a class="nav-link" href="about.html">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="book.html">Book Table</a>
+                                <a class="nav-link" asp-page="/BookTable/Index">Book Table</a>
                             </li>
                         </ul>
                         <div class="user_option">
@@ -308,10 +310,13 @@
 
 
 
-    
 
 
 
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
 
 
     @await RenderSectionAsync("Scripts", required: false)
